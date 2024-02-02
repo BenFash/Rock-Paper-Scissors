@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="flex-column main-container">
+    <!-- Title block -->
+    <section class="title-block flex-row">
+      <ul>
+        <li>Rock</li>
+        <li>Paper</li>
+        <li>Scissors</li>
+        <li>Lizard</li>
+        <li>Spock</li>
+      </ul>
+      <div class="score flex-column">
+        <div class="score-title">Score</div>
+        <div class="score-count">12</div>
+      </div>
+    </section>
+
+    <!-- User choice -->
+    <section class="user-choice">
+      <div class="game-card scissors"><img src="assets/images/icon-scissors.svg" alt="scissors"></div>
+      <div class="game-card paper"><img src="assets/images/icon-paper.svg" alt="paper"></div>
+      <div class="game-card rock"><img src="assets/images/icon-rock.svg" alt="rock"></div>
+      <div class="game-card lizard"><img src="assets/images/icon-lizard.svg" alt="lizard"></div>
+      <div class="game-card spock"><img src="assets/images/icon-spock.svg" alt="spock"></div>
+    </section>
+
+    <div class="section picked flex-row hidden">
+      <div class="choice flex-column">
+        <p>You picked</p>
+        <div class="user-pick"></div>
+      </div>
+      <div class="result">
+        <div class="title">You lose</div>
+        <button>Play again</button>
+      </div>
+      <div class="choice flex-column">
+        <p>The house picked</p>
+        <div class="pc-pick"></div>
+      </div>
+    </div>
+
+    <button class="rules-btn">Rules</button>
+    <div class="modal-bg"></div>
+    <div class="modal">
+      <span class="close">
+        <img src="assets/images/icon-close.svg" alt="">
+      </span>
+      <div class="title">Rules</div>
+      <div class="content">
+        <img src="assets/images/image-rules-bonus.svg" alt="">
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/BenFash" target="_blank">Ben Fashan</a>.
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
